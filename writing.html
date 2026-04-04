@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Writing | Sora Kai</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(180deg, #07111f 0%, #0b1830 42%, #101f36 100%);
+      color: #e8edf6;
+      font-family: "Noto Serif TC", "PingFang TC", "Microsoft JhengHei", serif;
+      line-height: 1.8;
+      letter-spacing: 0.02em;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .page {
+      min-height: 100vh;
+      padding: 28px 20px 72px;
+    }
+
+    .container {
+      width: min(960px, 100%);
+      margin: 0 auto;
+    }
+
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.95rem;
+      color: rgba(232, 237, 246, 0.8);
+      margin-left: 4px;
+      margin-bottom: 42px;
+      transition: opacity 0.2s ease;
+    }
+
+    .back-link:hover {
+      opacity: 0.7;
+    }
+
+    .hero {
+      margin-bottom: 48px;
+      padding: 0 4px;
+    }
+
+    .hero-title {
+      margin: 0 0 14px;
+      font-size: clamp(2.2rem, 5vw, 4rem);
+      font-weight: 500;
+      letter-spacing: 0.06em;
+      line-height: 1.2;
+      color: #f4f7fc;
+    }
+
+    .hero-text {
+      max-width: 680px;
+      margin: 0;
+      font-size: 1rem;
+      line-height: 2;
+      color: rgba(232, 237, 246, 0.72);
+    }
+
+    .guide-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin: 30px 0 8px;
+    }
+
+    .guide-tag {
+      padding: 8px 14px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,0.1);
+      background: rgba(255,255,255,0.03);
+      font-size: 0.9rem;
+      color: rgba(240, 244, 251, 0.78);
+    }
+
+    .writing-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      margin-top: 36px;
+      align-items: stretch;
+    }
+
+    .writing-item {
+      display: block;
+      height: 100%;
+    }
+
+    .writing-item:last-child {
+      grid-column: span 2;
+      max-width: 520px;
+      margin: 0 auto;
+    }
+
+    .writing-card {
+      height: 100%;
+      padding: 28px 24px 26px;
+      border-radius: 24px;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      box-shadow: 0 18px 48px rgba(0, 0, 0, 0.22);
+      backdrop-filter: blur(4px);
+      transition: transform 0.25s ease, background 0.25s ease, border-color 0.25s ease;
+    }
+
+    .writing-item:hover .writing-card {
+      transform: translateY(-4px);
+      background: rgba(255, 255, 255, 0.06);
+      border-color: rgba(255, 255, 255, 0.14);
+    }
+
+    .writing-label {
+      display: inline-block;
+      margin-bottom: 14px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.08);
+      font-size: 0.82rem;
+      color: rgba(232, 237, 246, 0.68);
+      letter-spacing: 0.04em;
+    }
+
+    .writing-title {
+      margin: 0 0 10px;
+      font-size: 1.75rem;
+      font-weight: 500;
+      line-height: 1.35;
+      color: #f7f9fd;
+    }
+
+    .writing-meta {
+      margin: 0 0 18px;
+      font-size: 0.92rem;
+      color: rgba(232, 237, 246, 0.55);
+    }
+
+    .writing-excerpt {
+      margin: 0;
+      font-size: 1rem;
+      line-height: 1.95;
+      color: rgba(240, 244, 251, 0.86);
+    }
+
+    .writing-arrow {
+      margin-top: 22px;
+      font-size: 0.95rem;
+      color: rgba(232, 237, 246, 0.68);
+    }
+    
+
+    .footer-note {
+      margin-top: 56px;
+      text-align: center;
+      font-size: 0.9rem;
+      color: rgba(232, 237, 246, 0.5);
+    }
+
+    @media (max-width: 820px) {
+      .writing-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .writing-item:last-child {
+        grid-column: span 1;
+        max-width: none;
+        margin: 0;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .page {
+        padding: 20px 16px 52px;
+      }
+
+      .hero-title {
+        font-size: 2.3rem;
+      }
+
+      .hero-text {
+        font-size: 0.98rem;
+      }
+
+      .writing-card {
+        padding: 24px 20px 22px;
+        border-radius: 20px;
+      }
+
+      .writing-title {
+        font-size: 1.45rem;
+      }
+
+      .writing-excerpt {
+        font-size: 0.98rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div class="container">
+    <a class="back-link" href="world.html">← Back to World</a>
+
+      <header class="hero">
+        <h1 class="hero-title">Writing</h1>
+        <p class="hero-text">
+          有些文字來自現場，有些來自觀看，也有一些是在行走之中慢慢浮現。
+          它們不急著說明什麼，只像一道門，讓人走進某個時間、某種感受，或一段仍在心裡發光的記憶。
+        </p>
+
+        <div class="guide-row">
+          <span class="guide-tag">現場</span>
+          <span class="guide-tag">觀看</span>
+          <span class="guide-tag">行走</span>
+        </div>
+      </header>
+
+      <section class="writing-grid">
+        <a href="dreisam.html" class="writing-item">
+          <article class="writing-card">
+            <div class="writing-label">行走</div>
+            <h2 class="writing-title">在Dreisam河畔哭泣</h2>
+            <p class="writing-meta">2010 / 11 / 30</p>
+            <p class="writing-excerpt">
+              在異地找不到住處的日子裡，秋天的河畔突然陰沉下來。
+              一場細雨，一對手牽手走來的老夫婦，像夢一樣，留在多年以後仍會想起的記憶裡。
+            </p>
+            <div class="writing-arrow">Read →</div>
+          </article>
+        </a>
+
+        <a href="first-emotion.html" class="writing-item">
+          <article class="writing-card">
+            <div class="writing-label">觀看</div>
+            <h2 class="writing-title">生命中最初的感動</h2>
+            <p class="writing-meta">2010 / 1 / 21</p>
+            <p class="writing-excerpt">
+              一次訪談，讓記憶回到很早很早的地方。
+              那個躲在棉被裡偷看童話的小孩，一讀到美人魚公主化成泡沫，就反覆地哭，反覆地重讀。
+            </p>
+            <div class="writing-arrow">Read →</div>
+          </article>
+        </a>
+
+        <a href="interrupted-performance.html" class="writing-item">
+  <article class="writing-card">
+    <div class="writing-label">現場</div>
+    <h2 class="writing-title">被打斷的自導自演</h2>
+    <p class="writing-meta">2010 / 1 / 29</p>
+    <p class="writing-excerpt">
+      客廳被當成舞台，窗簾和沙發後面藏著角色，錄音帶一放，森林就出現了。
+      一場童年的自導自演，卻在大人提早回家時，忽然中斷。
+    </p>
+    <div class="writing-arrow">Read →</div>
+  </article>
+</a>
+
+      <div class="footer-note">Sora Kai — Writing</div>
+    </div>
+  </div>
+</body>
+</html>
