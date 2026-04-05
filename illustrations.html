@@ -6,6 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
       font-family: "Helvetica Neue", sans-serif;
@@ -14,9 +18,9 @@
     }
 
     .page {
-      max-width: 900px;
+      max-width: 880px;
       margin: 0 auto;
-      padding: 40px 20px 80px;
+      padding: 48px 24px 100px;
     }
 
     .back {
@@ -24,7 +28,9 @@
       color: #bfc7d2;
       text-decoration: none;
       font-size: 0.9rem;
-      margin-bottom: 30px;
+      letter-spacing: 1px;
+      margin-bottom: 40px;
+      transition: color 0.3s ease;
     }
 
     .back:hover {
@@ -32,17 +38,60 @@
     }
 
     h1 {
+      font-size: 2rem;
       font-weight: 300;
-      letter-spacing: 3px;
-      margin-bottom: 40px;
+      letter-spacing: 4px;
+      margin: 0 0 20px;
+    }
+
+    .intro {
+      max-width: 620px;
+      font-size: 0.96rem;
+      line-height: 1.9;
+      color: #cfd6df;
+      margin-bottom: 52px;
+    }
+
+    .gallery {
+      display: flex;
+      flex-direction: column;
+      gap: 36px;
     }
 
     .gallery img {
       width: 100%;
-      margin-bottom: 30px;
+      display: block;
       border-radius: 4px;
     }
 
+    .footer {
+      margin-top: 70px;
+      text-align: center;
+      font-size: 0.82rem;
+      color: #7f8996;
+      letter-spacing: 1px;
+    }
+
+    @media (max-width: 640px) {
+      .page {
+        padding: 36px 18px 72px;
+      }
+
+      h1 {
+        font-size: 1.6rem;
+        letter-spacing: 3px;
+      }
+
+      .intro {
+        font-size: 0.92rem;
+        line-height: 1.8;
+        margin-bottom: 40px;
+      }
+
+      .gallery {
+        gap: 24px;
+      }
+    }
   </style>
 </head>
 
@@ -53,10 +102,22 @@
 
     <h1>ILLUSTRATIONS</h1>
 
+    <div class="intro">
+      These works open outward —
+      fragments of places, stories, and passing worlds.
+      <br><br>
+      They invite the viewer to step into a scene,
+      to walk, to look, and to linger.
+    </div>
+
     <div class="gallery">
-      <img src="taiwan.jpg">
-      <img src="nutcracker.jpg">
-      <img src="seed.jpg">
+      <img src="阿里山小火車.jpg" alt="Alishan Forest Railway">
+      <img src="nutcracker.jpg" alt="Nutcracker">
+      <img src="雲林摩爾花園.jpg" alt="Mole Garden, Yunlin">
+    </div>
+
+    <div class="footer">
+      Sora Kai
     </div>
 
   </div>
