@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About | Sora Kai</title>
+
   <style>
     * {
       box-sizing: border-box;
@@ -12,26 +13,37 @@
     body {
       margin: 0;
       font-family: "Helvetica Neue", Arial, sans-serif;
-      background: radial-gradient(circle at top, #102038 0%, #060b14 45%, #000000 100%);
+      background: radial-gradient(circle at 30% 20%, rgba(60, 90, 160, 0.25), transparent 40%),
+                  radial-gradient(circle at 70% 30%, rgba(120, 70, 180, 0.2), transparent 45%),
+                  radial-gradient(circle at 50% 80%, rgba(40, 120, 140, 0.2), transparent 50%),
+                  linear-gradient(180deg, #05070d 0%, #02040a 100%);
       color: #f5f5f5;
       min-height: 100vh;
-      line-height: 1.9;
+      line-height: 2;
       letter-spacing: 0.02em;
     }
 
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      background: radial-gradient(circle at center, rgba(255,255,255,0.03), transparent 60%);
+      pointer-events: none;
+    }
+
     .page {
-      max-width: 760px;
+      max-width: 720px;
       margin: 0 auto;
-      padding: 48px 28px 90px;
+      padding: 64px 28px 100px;
     }
 
     .back {
       display: inline-block;
-      margin-bottom: 36px;
+      margin-bottom: 40px;
       color: #bfc7d2;
       text-decoration: none;
-      font-size: 0.95rem;
-      letter-spacing: 0.08em;
+      font-size: 0.9rem;
+      letter-spacing: 0.1em;
       transition: color 0.3s ease;
     }
 
@@ -40,54 +52,57 @@
     }
 
     h1 {
-      font-size: 2.2rem;
+      font-size: 2rem;
       font-weight: 300;
-      letter-spacing: 0.18em;
-      margin: 0 0 42px 0;
+      letter-spacing: 0.2em;
+      margin: 0 0 56px 0;
       color: #ffffff;
     }
 
     .section {
-      margin-bottom: 44px;
+      margin-bottom: 64px;
     }
 
     .en {
       font-size: 1.05rem;
       color: #f3f4f6;
-      margin-bottom: 28px;
+      margin-bottom: 48px;
       white-space: pre-line;
+      opacity: 0.95;
     }
 
     .zh {
       font-size: 1rem;
       color: #cfd6df;
       white-space: pre-line;
+      opacity: 0.85;
     }
 
     .signature {
-      margin-top: 56px;
-      font-size: 0.95rem;
+      margin-top: 80px;
+      font-size: 0.9rem;
       color: #9fb0c3;
-      letter-spacing: 0.08em;
+      letter-spacing: 0.12em;
     }
 
     @media (max-width: 640px) {
       .page {
-        padding: 36px 22px 72px;
+        padding: 48px 22px 80px;
       }
 
       h1 {
-        font-size: 1.8rem;
-        letter-spacing: 0.14em;
+        font-size: 1.6rem;
+        letter-spacing: 0.16em;
       }
 
       .en,
       .zh {
-        font-size: 0.98rem;
+        font-size: 0.95rem;
       }
     }
   </style>
 </head>
+
 <body>
   <div class="page">
     <a href="index.html" class="back">← Home</a>
@@ -109,7 +124,7 @@ But something in me always knew.
 
 For over twenty years, I worked across theatre, writing, and translation—
 learning to sense the flow of space and presence,
-to translate between languages and meanings,
+to move between languages and meanings,
 and to observe the world through words.
 
 There were times I moved quickly,
@@ -124,7 +139,8 @@ Transforming what has been gathered over time
 into visual forms.
 
 I do not paint landscapes.
-I paint the invisible connections between the inner world and the outer one.
+I paint the invisible connections
+between the inner world and the outer one.
 
 This is not a place of answers,
 but a place to breathe, to see, and to be.
@@ -152,18 +168,19 @@ I am learning to be here.
 也在書寫之中，練習觀看世界。
 
 曾經有一段時間，我走得很快，
-努力撐住一切，把每件事做到最好。
+撐住一切，也努力把事情做好。
 也有一段時間，我不得不停下來，
 學習只是待著，好好存在。
 
 現在，我畫畫、寫字，
 慢慢地，建構一個屬於自己的空間。
 
-將那些累積於時間之中的感知與經驗，
+把那些在時間裡累積的感知與經驗，
 轉化為圖像。
 
 我畫的不是風景，
-而是內在與世界之間，那些看不見的連結。
+而是內在與世界之間，
+那些看不見的連結。
 
 這裡不是為了給答案，
 而是一個可以呼吸、觀看、存在的地方。
