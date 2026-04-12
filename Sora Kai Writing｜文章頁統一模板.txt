@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>文章標題 | Sora Kai</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: "Helvetica Neue", "Noto Sans TC", sans-serif;
+      background: radial-gradient(circle at top, #102038 0%, #060b14 45%, #000000 100%);
+      color: #e8edf3;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      max-width: 680px;
+      padding: 60px 28px 80px;
+      line-height: 2.2;
+      letter-spacing: 0.05em;
+    }
+
+    .back {
+      position: absolute;
+      top: 30px;
+      left: 30px;
+      color: #bfc7d2;
+      text-decoration: none;
+      font-size: 0.95rem;
+    }
+
+    .back:hover {
+      color: #ffffff;
+    }
+
+    h1 {
+      font-weight: 300;
+      font-size: 1.8rem;
+      letter-spacing: 3px;
+      margin-bottom: 12px;
+      color: #ffffff;
+    }
+
+    .date {
+      font-size: 0.9rem;
+      color: #9fb0c3;
+      margin-bottom: 40px;
+    }
+
+    .content {
+      white-space: pre-line;
+      font-size: 1.05rem;
+    }
+
+    .footer {
+      margin-top: 70px;
+      font-size: 0.95rem;
+    }
+
+    .footer a {
+      color: #bfc7d2;
+      text-decoration: none;
+      margin-right: 14px;
+    }
+
+    .footer a:hover {
+      color: #ffffff;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- 上方返回 -->
+  <a class="back" href="writing.html">← Back to Writing</a>
+
+  <div class="container">
+
+    <!-- 標題 -->
+    <h1>文章標題</h1>
+
+    <!-- 日期（可選） -->
+    <div class="date">2010/00/00</div>
+
+    <!-- 內容 -->
+    <div class="content">
+在這裡放你的文章內容
+
+換行會自動保留
+不用加 br
+    </div>
+
+    <!-- 下方返回 -->
+    <div class="footer">
+      <a href="writing.html">← 回到 Writing</a>
+      <a href="index.html">回到 Home</a>
+    </div>
+
+  </div>
+</body>
+</html>
