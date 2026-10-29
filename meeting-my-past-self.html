@@ -1,24 +1,173 @@
-在舊報導裡，遇見當年的自己
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>在舊報導裡，遇見當年的自己 | Sora Kai</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
 
-原本只是想從網路上找回一些文山分館的活動紀錄，沒想到竟然還能聽見當年自己接受採訪的聲音。
-搜尋到一則2005年世新廣播電臺的 Podcast 網頁，有一則關於文山分館「掌中乾坤－布袋戲文化展」的廣播新聞，點進去世新廣播電臺的 Podcast 網頁,真的有聽到我自己的聲音，不過我的聲音聽起來非常嚴肅...
-真的聽到了！那可是二十多年前的自己啊。
-突然聽見二十多年前自己的聲音，是一種很奇妙的陌生感…
-https://shrs.shu.edu.tw/podcast/opod1862/
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(180deg, #07111f 0%, #0c1a2f 45%, #101f36 100%);
+      color: #e8edf6;
+      font-family: "Noto Serif TC", "PingFang TC", "Microsoft JhengHei", serif;
+      line-height: 1.95;
+      letter-spacing: 0.02em;
+    }
 
-採訪的活動是2005年10月7日，〈掌中乾坤－布袋戲文化展〉
-文字稿中三次提及我的採訪發言：
-•	布袋戲體驗營的設計。
-•	將展覽DM剪下製作成布袋戲偶，以及播放布袋戲大師經典作品。
-•	與文山區國小合作推廣布袋戲文化。
-當時記者不只是報導展覽，也特別訪問我如何將傳統藝術轉化為親子及學校教育活動。
-在社教館文山分館做過許多活動，都是默默累積，沒有留下太多公開紀錄。現在逐漸找到一些世新大學的採訪，確實能讓那段歷史重新浮現。
-「從展覽到體驗：如何讓親子真正走進傳統藝術」
-這不僅記錄一場布袋戲展覽，也談到我當年如何思考公共藝文場館的教育功能。
-當年忙著規劃活動、接受採訪，沒有想到，多年以後，自己竟然會在網路上重新聽見這段聲音。
-「我，是形成我的過程。」
-今天找到的這段錄音，好像又讓我遇見了形成自己的其中一個片刻。
-在社教館文山分館(後來的文山劇場)工作那麼多年，接受過地方電視台、廣播電臺等媒體的採訪，當時大概也把這些視為日常工作的一部分。採訪結束，新聞播出，接著又忙下一場活動，沒想到要為自己留一份紀錄。
-而且，那個年代不像現在，影音資料可以輕易地錄製、保存、分享。即使當年有播出，也不代表多年後還找得到。
-最近陸續找回的資料：活動新聞、劇場節目單、感謝名單、早期工作紀錄，現在又多了一段自己的聲音。這些資料很零散，卻逐漸拼湊出我當年在劇場工作的樣貌。
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
 
+    .page {
+      min-height: 100vh;
+      padding: 28px 20px 64px;
+    }
+
+    .container {
+      width: min(720px, 100%);
+      margin: 0 auto;
+    }
+
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.95rem;
+      color: rgba(232, 237, 246, 0.8);
+      margin-left: 4px;
+      margin-bottom: 40px;
+      transition: opacity 0.2s ease;
+    }
+
+    .back-link:hover {
+      opacity: 0.7;
+    }
+
+    .article {
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 24px;
+      padding: 44px 28px 52px;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.28);
+      backdrop-filter: blur(4px);
+    }
+
+    .article-header {
+      margin-bottom: 32px;
+      padding-bottom: 22px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .article-title {
+      margin: 0 0 10px;
+      font-size: clamp(1.8rem, 4vw, 2.6rem);
+      font-weight: 500;
+      line-height: 1.35;
+      letter-spacing: 0.05em;
+      color: #f6f8fc;
+    }
+
+    .article-date {
+      font-size: 0.95rem;
+      color: rgba(232, 237, 246, 0.66);
+    }
+
+    .article-body p {
+      margin: 0 0 1.25em;
+      font-size: 1.04rem;
+      color: rgba(240, 244, 251, 0.94);
+    }
+
+    .article-body p:last-child {
+      margin-bottom: 0;
+    }
+
+    .article-body .spaced {
+      margin-top: 2em;
+    }
+
+    .ending {
+      margin-top: 40px;
+      font-size: 1.08rem;
+      line-height: 2.1;
+      color: rgba(255, 255, 255, 0.95);
+    }
+
+    .footer-note {
+      margin-top: 36px;
+      font-size: 0.9rem;
+      color: rgba(232, 237, 246, 0.55);
+      text-align: center;
+    }
+
+    @media (max-width: 640px) {
+      .page {
+        padding: 20px 16px 44px;
+      }
+
+      .article {
+        padding: 32px 20px 40px;
+        border-radius: 20px;
+      }
+
+      .article-body p {
+        font-size: 1rem;
+      }
+
+      .ending {
+        font-size: 1.03rem;
+      }
+    }
+
+    .article-body a { color: #c9dcff; text-decoration: underline; text-underline-offset: 3px; overflow-wrap: anywhere; }
+    .article-body ul { margin: 0 0 1.25em; padding-left: 1.6em; color: rgba(240, 244, 251, 0.94); }
+    .article-body li { margin-bottom: 0.4em; }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div class="container">
+      <a class="back-link" href="writing.html" aria-label="回到 Writing 頁面">← Back to Writing</a>
+
+      <article class="article">
+        <header class="article-header">
+          <h1 class="article-title">在舊報導裡，遇見當年的自己</h1>
+        </header>
+
+        <section class="article-body">
+          <p>原本只是想從網路上找回一些文山分館的活動紀錄，沒想到竟然還能聽見當年自己接受採訪的聲音。</p>
+          <p>搜尋到一則2005年世新廣播電臺的 Podcast 網頁，有一則關於文山分館「掌中乾坤－布袋戲文化展」的廣播新聞，點進去世新廣播電臺的 Podcast 網頁,真的有聽到我自己的聲音，不過我的聲音聽起來非常嚴肅...</p>
+          <p>真的聽到了！那可是二十多年前的自己啊。</p>
+          <p>突然聽見二十多年前自己的聲音，是一種很奇妙的陌生感…</p>
+          <p><a href="https://shrs.shu.edu.tw/podcast/opod1862/" target="_blank" rel="noopener noreferrer">https://shrs.shu.edu.tw/podcast/opod1862/</a></p>
+          <p>採訪的活動是2005年10月7日，〈掌中乾坤－布袋戲文化展〉</p>
+          <p>文字稿中三次提及我的採訪發言：</p>
+          <ul>
+            <li>布袋戲體驗營的設計。</li>
+            <li>將展覽DM剪下製作成布袋戲偶，以及播放布袋戲大師經典作品。</li>
+            <li>與文山區國小合作推廣布袋戲文化。</li>
+          </ul>
+          <p>當時記者不只是報導展覽，也特別訪問我如何將傳統藝術轉化為親子及學校教育活動。</p>
+          <p>在社教館文山分館做過許多活動，都是默默累積，沒有留下太多公開紀錄。現在逐漸找到一些世新大學的採訪，確實能讓那段歷史重新浮現。</p>
+          <p>「從展覽到體驗：如何讓親子真正走進傳統藝術」</p>
+          <p>這不僅記錄一場布袋戲展覽，也談到我當年如何思考公共藝文場館的教育功能。</p>
+          <p>當年忙著規劃活動、接受採訪，沒有想到，多年以後，自己竟然會在網路上重新聽見這段聲音。</p>
+          <p class="ending">「我，是形成我的過程。」</p>
+          <p>今天找到的這段錄音，好像又讓我遇見了形成自己的其中一個片刻。</p>
+          <p>在社教館文山分館(後來的文山劇場)工作那麼多年，接受過地方電視台、廣播電臺等媒體的採訪，當時大概也把這些視為日常工作的一部分。採訪結束，新聞播出，接著又忙下一場活動，沒想到要為自己留一份紀錄。</p>
+          <p>而且，那個年代不像現在，影音資料可以輕易地錄製、保存、分享。即使當年有播出，也不代表多年後還找得到。</p>
+          <p>最近陸續找回的資料：活動新聞、劇場節目單、感謝名單、早期工作紀錄，現在又多了一段自己的聲音。這些資料很零散，卻逐漸拼湊出我當年在劇場工作的樣貌。</p>
+        </section>
+      </article>
+
+      <div class="footer-note">Sora Kai — Writing</div>
+    </div>
+  </div>
+</body>
+</html>
